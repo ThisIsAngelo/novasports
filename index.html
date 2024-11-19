@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link href="./src/output.css" rel="stylesheet" />
+    <title>Novasports</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      class="fixed top-2 z-[9999] py-2 w-full mix-blend-difference transition-transform ease-linear duration-150"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="400"
+    >
+      <div class="container">
+        <div class="flex justify-between items-center w-full">
+          <div class="flex justify-center items-center">
+            <a href="">
+              <img src="/public/logo.png" alt="logo" class="w-20 h-20" />
+            </a>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <a href="#" class="text-lg font-semibold hover:text-gray-100">
+              HOME
+            </a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-100">
+              GALLERY
+            </a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-100">
+              TRAINING
+            </a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-100">
+              PRICING
+            </a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-100">
+              CONTACT
+            </a>
+          </div>
+
+          <div class="flex gap-2">
+            <a
+              href=""
+              class="px-8 py-2 border border-white rounded-2xl font-semibold hover:bg-white hover:text-black transition ease-linear duration-100"
+              >JOIN MEMBERSHIP</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <a href="#" class="to-top"><box-icon name='chevron-up'></box-icon></a>
+
+    <section
+      id="hero"
+      class="relative flex justify-center items-center min-h-screen backdrop-brightness-50 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:48px_48px]"
+      ></div>
+      <div class="container">
+        <div class="flex flex-col justify-center items-center h-screen">
+          <img
+            src="/public/hand.png"
+            alt="hand"
+            class="h-[65%] absolute -bottom-[5%] left-[35%] z-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          />
+          <img
+            src="/public/ball.png"
+            alt="ball"
+            class="absolute top-[15%] left-[41%] w-[20%] z-10"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          />
+          <div class="flex items-center justify-between w-full">
+            <h1
+              class="text-[10rem] text-gray-300 font-bitter font-bold cursor-default"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              NOVA
+            </h1>
+            <h1
+              class="text-[10rem] text-gray-300 font-bitter font-bold cursor-default"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              SPORTS
+            </h1>
+          </div>
+          <div
+            class="z-50 absolute bottom-12 left-[49%] flex flex-col items-center justify-center"
+          >
+            <box-icon
+              name="mouse"
+              class="w-8 h-8 fill-white animate-bounce"
+            ></box-icon>
+            <p>Scroll Down</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container">
+        <div class="flex flex-col justify-center items-center h-full gap-16">
+          <h1
+            class="w-[85%] text-4xl text-center text-gray-100"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <span class="text-white font-bold">Join</span> a fun and
+            <span class="text-white font-bold">supportive sports community</span
+            >. We offer personalized training sessions tailored to
+            <span class="text-white font-bold">your goals</span>, helping you
+            reach <span class="text-white font-bold">your full potential</span>.
+            Our
+            <span class="text-white font-bold">flexible scheduling</span> means
+            you can work out whenever it suits you.
+          </h1>
+
+          <!-- Stats -->
+          <div
+            class="flex items-center gap-8"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <h1 class="font-bold text-4xl">100+</h1>
+              <p class="text-gray-100 text-lg font-semibold">Mentorship</p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <h1 class="font-bold text-4xl">150+</h1>
+              <p class="text-gray-100 text-lg font-semibold">Community</p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <h1 class="font-bold text-4xl">900+</h1>
+              <p class="text-gray-100 text-lg font-semibold">Membership</p>
+            </div>
+          </div>
+
+          <!-- Action -->
+          <div
+            class="flex items-center gap-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <button
+              class="py-2 px-6 border border-white rounded-2xl font-bold hover:bg-white hover:text-black transition ease-linear duration-100"
+            >
+              JOIN NOW!
+            </button>
+            <button class="py-2 px-6 border rounded-2xl font-bold gradient-bg">
+              WATCH STORY
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-16 pb-32 overflow-hidden">
+      <div class="container">
+        <div class="flex flex-col justify-center items-center gap-16">
+          <!-- Title -->
+          <div class="flex justify-between items-center w-full">
+            <h1
+              class="text-4xl font-bold font-bitter text-gray-100"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              OUR <span class="text-white">MENTORS</span>
+            </h1>
+            <a
+              href="#"
+              class="text-lg hover:underline"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              >See more</a
+            >
+          </div>
+
+          <!-- Mentors -->
+          <div class="grid grid-cols-4 gap-4">
+            <!-- Mentor Card -->
+            <div
+              class="flex flex-col gap-2 border border-gray-300 rounded-xl group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="relative rounded-xl flex justify-center items-center">
+                <img
+                  src="/public/mentor.jpeg"
+                  alt="mentor"
+                  class="rounded-xl group-hover:brightness-75 transition ease-linear duration-100"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black z-[50]"
+                ></div>
+                <box-icon
+                  type="solid"
+                  name="right-top-arrow-circle"
+                  class="cursor-pointer w-12 h-12 fill-white absolute scale-0 hover:fill-gray-100 group-hover:scale-100 transition ease-linear duration-100 z-50"
+                ></box-icon>
+              </div>
+
+              <div class="py-1.5 px-3 text-center">
+                <h1 class="text-2xl font-bold">JOHN SMITH</h1>
+                <p class="text-gray-100">Professional Mentor</p>
+              </div>
+            </div>
+
+            <!-- Mentor Card -->
+            <div
+              class="flex flex-col gap-2 border border-gray-300 rounded-xl group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="relative rounded-xl flex justify-center items-center">
+                <img
+                  src="/public/mentor.jpeg"
+                  alt="mentor"
+                  class="rounded-xl group-hover:brightness-75 transition ease-linear duration-100"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black z-[50]"
+                ></div>
+                <box-icon
+                  type="solid"
+                  name="right-top-arrow-circle"
+                  class="cursor-pointer w-12 h-12 fill-white absolute scale-0 hover:fill-gray-100 group-hover:scale-100 transition ease-linear duration-100 z-50"
+                ></box-icon>
+              </div>
+
+              <div class="py-1.5 px-3 text-center">
+                <h1 class="text-2xl font-bold">JOHN SMITH</h1>
+                <p class="text-gray-100">Professional Mentor</p>
+              </div>
+            </div>
+
+            <!-- Mentor Card -->
+            <div
+              class="flex flex-col gap-2 border border-gray-300 rounded-xl group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div class="relative rounded-xl flex justify-center items-center">
+                <img
+                  src="/public/mentor.jpeg"
+                  alt="mentor"
+                  class="rounded-xl group-hover:brightness-75 transition ease-linear duration-100"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black z-[50]"
+                ></div>
+                <box-icon
+                  type="solid"
+                  name="right-top-arrow-circle"
+                  class="cursor-pointer w-12 h-12 fill-white absolute scale-0 hover:fill-gray-100 group-hover:scale-100 transition ease-linear duration-100 z-50"
+                ></box-icon>
+              </div>
+
+              <div class="py-1.5 px-3 text-center">
+                <h1 class="text-2xl font-bold">JOHN SMITH</h1>
+                <p class="text-gray-100">Professional Mentor</p>
+              </div>
+            </div>
+
+            <!-- Mentor Card -->
+            <div
+              class="flex flex-col gap-2 border border-gray-300 rounded-xl group"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+            >
+              <div class="relative rounded-xl flex justify-center items-center">
+                <img
+                  src="/public/mentor.jpeg"
+                  alt="mentor"
+                  class="rounded-xl group-hover:brightness-75 transition ease-linear duration-100"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black z-[50]"
+                ></div>
+                <box-icon
+                  type="solid"
+                  name="right-top-arrow-circle"
+                  class="cursor-pointer w-12 h-12 fill-white absolute scale-0 hover:fill-gray-100 group-hover:scale-100 transition ease-linear duration-100 z-50"
+                ></box-icon>
+              </div>
+
+              <div class="py-3 px-3 text-center">
+                <h1 class="text-2xl font-bold">JOHN SMITH</h1>
+                <p class="text-gray-100">Professional Mentor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 relative" id="membership">
+      <div class="container">
+        <div class="flex item-center h-[50vh]">
+          <div class="flex flex-col justify-center gap-6 w-1/2 z-20">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <img
+                src="/public/quotation.png"
+                alt="quotation"
+                class="w-16 h-16"
+              />
+              <h1 class="text-3xl">
+                Novasports has completely changed the way I play basketball. The
+                trainers don't just teach—they inspire! My shooting form,
+                defense, and court awareness have reached new heights. If you're
+                ready to dominate the court, Novasports is where your journey
+                begins!
+              </h1>
+            </div>
+
+            <div
+              class="flex flex-col"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <h1 class="text-3xl font-bold">MICHAEL JOHNSON</h1>
+              <p class="text-gray-100">Membership</p>
+            </div>
+          </div>
+
+          <div class="flex w-1/2">
+            <img
+              src="/public/membership.png"
+              alt="membership"
+              class="w-[70%] absolute bottom-0 -right-[5%] z-20"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32">
+      <div class="container">
+        <div class="flex flex-col items-center justify-center gap-6">
+          <h1
+            class="text-5xl font-bitter font-bold"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            PRICING PLAN
+          </h1>
+
+          <div class="flex gap-4 w-full">
+            <div
+              class="flex flex-col gap-2 w-1/2 border border-gray-100 rounded-xl p-8"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="flex justify-between items-center w-full">
+                <img src="/public/logo.png" alt="logo" class="w-20 h-20" />
+                <p class="text-white text-2xl">$20/month</p>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-2xl">BASIC PLAN</h1>
+                <p class="text-gray-100">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto velit, optio accusantium tempore repellat incidunt
+                  debitis id quibusdam rem vero omnis dolore quos, quasi ad
+                  mollitia et fuga pariatur eveniet? Repellendus earum minus
+                  totam eveniet!
+                </p>
+              </div>
+
+              <hr class="border-none w-full p-[1px] bg-gray-100 my-4" />
+
+              <div class="flex flex-col justify-between gap-10 h-full">
+                <div class="flex flex-col gap-6">
+                  <h1 class="text-xl font-bold">INCLUDES:</h1>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Personalized Training Plans</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Direct Access to Elite Coaches</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Exclusive Training Facilities</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Join a Supportive Community</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">
+                        Exclusive Access to Online Resources
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Regular Group Training Sessions</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full p-2 border border-white rounded-3xl font-bold hover:bg-white hover:text-black transition ease-linear duration-100"
+                >
+                  CHOOSE PLAN
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col gap-2 w-1/2 border border-gray-100 rounded-xl p-8"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div class="flex justify-between items-center w-full">
+                <img src="/public/logo.png" alt="logo" class="w-20 h-20" />
+                <p class="text-white text-2xl">$25/month</p>
+              </div>
+
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-2xl">PREMIUM PLAN</h1>
+                <p class="text-gray-100">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam, voluptates fugiat? Soluta, est dolores obcaecati
+                  corrupti eos dicta ducimus nobis error neque reprehenderit,
+                  earum beatae consequuntur delectus sequi, rem labore?
+                </p>
+              </div>
+
+              <hr class="border-none w-full p-[1px] bg-gray-100 my-4" />
+
+              <div class="flex flex-col justify-between gap-10 h-full">
+                <div class="flex flex-col gap-6">
+                  <h1 class="text-xl font-bold">INCLUDES:</h1>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Personalized Training Plans</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Direct Access to Elite Coaches</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Exclusive Training Facilities</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Join a Supportive Community</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">
+                        Exclusive Access to Online Resources
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Regular Group Training Sessions</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Nutritional Guidance</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Mental Toughness Training</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Advanced Skill Development</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <box-icon
+                        name="check"
+                        class="fill-white w-7 h-7"
+                      ></box-icon>
+                      <p class="text-md">Performance Tracking and Analysis</p>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="w-full p-2 border border-white rounded-3xl font-bold hover:bg-white hover:text-black transition ease-linear duration-100"
+                >
+                  CHOOSE PLAN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 overflow-hidden">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="flex gap-8">
+            <div
+              class="flex items-center gap-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div
+                class="p-2 border border-white rounded-[50%] flex justify-center items-center"
+              >
+                <box-icon name="home" class="w-8 h-8 fill-white"></box-icon>
+              </div>
+              <div class="flex flex-col">
+                <p class="text-md font-bold">Address</p>
+                <p class="text-gray-100 text-sm">
+                  456 Elm Avenue, Vancouver, British Columbia V6B 6P5
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="400"
+            >
+              <div
+                class="p-2 border border-white rounded-[50%] flex justify-center items-center"
+              >
+                <box-icon
+                  name="phone"
+                  type="solid"
+                  class="w-8 h-8 fill-white"
+                ></box-icon>
+              </div>
+              <div class="flex flex-col">
+                <p class="text-md font-bold">Phone</p>
+                <p class="text-gray-100 text-sm">(604) 555-3434</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
+              <div
+                class="p-2 border border-white rounded-[50%] flex justify-center items-center"
+              >
+                <box-icon
+                  name="envelope"
+                  type="solid"
+                  class="w-8 h-8 fill-white"
+                ></box-icon>
+              </div>
+              <div class="flex flex-col">
+                <p class="text-md font-bold">Email</p>
+                <p class="text-gray-100 text-sm">novasupport@novasports.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-between bg-gray-300 py-2 px-4 w-[30%] rounded-[32px]"  data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="bg-transparent focus:outline-none w-[70%]"
+            />
+            <button
+              class="flex-1 p-2 rounded-3xl bg-gray-100 text-black font-bold"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-16 pb-4 bg-black" data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="400"
+    >
+      <div class="container">
+        <div class="flex flex-col gap-12">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-[60px]">
+            <!-- Branding and Description -->
+            <div class="flex flex-col gap-7">
+              <!-- Logo -->
+              <div class="w-full flex items-center gap-1">
+                <img
+                  src="public/logo.png"
+                  alt="logo"
+                  class="w-10 h-10 lg:w-8 lg:h-8"
+                />
+                <h1 class="font-bold text-[24px] lg:text-[22px] text-white">
+                  NOVASPORTS
+                </h1>
+              </div>
+              <!-- Description -->
+              <p class="text-gray-100 font-medium leading-7 sm:w-1/2 lg:w-full">
+                Level up your game today with expert training and cutting-edge technology.
+              </p>
+
+              <!-- Social Media & Contact -->
+              <div class="w-full flex gap-4">
+                <div class="p-2 rounded-[50%] bg-white flex justify-center items-center">
+                  <box-icon name='envelope' type='solid' class="w-8 h-8"></box-icon>
+                </div>
+                <div class="p-2 rounded-[50%] bg-white flex justify-center items-center">
+                  <box-icon name='globe' class="w-8 h-8"></box-icon>
+                </div>
+                <div class="p-2 rounded-[50%] bg-white flex justify-center items-center">
+                  <box-icon name='phone' type='solid' class="w-8 h-8"></box-icon>
+                </div>
+                <div class="p-2 rounded-[50%] bg-white flex justify-center items-center">
+                  <box-icon name='home' type='solid' class="w-8 h-8"></box-icon>
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- Product Section -->
+            <div class="flex flex-col gap-7">
+              <h3 class="text-white font-bold text-[18px]">Products</h3>
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Powerfull Reports</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Blockchain</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Auto-Backup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Data Science</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Auto-Scaling Up</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="flex flex-col gap-7">
+              <h3 class="text-white font-bold text-[18px]">Resources</h3>
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Support 24/7</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >How-to Instructions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Blog & Tips</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Company Section -->
+            <div class="flex flex-col gap-7">
+              <h3 class="text-white font-bold text-[18px]">Company</h3>
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Privacy and Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Terms and Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Investor Relations</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Join With Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="font-medium text-gray-100 hover:text-white transition ease-linear duration-150"
+                    >Our Statistics</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="w-full">
+            <p class="font-medium text-gray-100 text-center">
+              All Rights Reserved • Copyright Novasports by Angelo 2024
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/public/js/script.js"></script>
+
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
